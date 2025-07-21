@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Happy Birthday</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script
+    src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+    type="module"
+  ></script>
+</head>
+<body>
+  <img src="images/balloon1.png" class="floating-png balloon1" alt="Balloon">
+  <img src="images/balloon2.png" class="floating-png balloon2" alt="Balloon">
+
+  <canvas id="confetti-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0;"></canvas>
+  <div class="container">
+    <div class="card">
+      <div class="wavy-box"></div>
+      <div class="image-section">
+        <dotlottie-player
+          class="lottie-delay"
+          src="https://lottie.host/bac386c1-d775-4ec1-98cd-58c4587be93e/wT37X1JRff.lottie"
+          background="transparent"
+          speed="1"
+          style="width: 100%; max-width: 300px; height: auto"
+          loop
+          autoplay
+        ></dotlottie-player>
+      </div>
+      <h1>З Днем народження,<br>пані Марино!</h1>
+      <h2>Бажаю тобі магії в кожному дні та усмішок у кожному ранку. Нехай кожне бажання знаходить свій шлях до здійснення.</h2>
+      <button class="button" id="giftBtn">Your Gift</button>
+    </div>
+  </div>
+  <footer>
+    made with &nbsp;
+    <svg class="prezenta-logo" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 122.9 23.1">
+      <defs>
+        <style>
+          .st0 {
+            fill: #fff;
+          }
+        </style>
+      </defs>
+      <path class="st0" d="M15.2,10.8c0,4.2-2.9,7.4-6.8,7.4s-3.2-.7-4.3-1.9v6.8H0V3.7h4v1.6c1.1-1.2,2.5-1.9,4.3-1.9,3.9,0,6.8,3.2,6.8,7.4ZM11.1,10.8c0-2-1.5-3.5-3.5-3.5s-3.5,1.5-3.5,3.5,1.5,3.5,3.5,3.5,3.5-1.5,3.5-3.5Z"/>
+      <path class="st0" d="M31.5,13.9v3.9h-1c-3.9,0-6-2.2-6-5.8s.2-2.4.8-3.7l-3.5-.4-1.9,9.9h-4l2.2-10.9c-.8-.6-1.2-1.5-1.2-2.5,0-1.5,1.1-2.5,2.6-2.5s2.5.9,2.7,2.2l8.7,1v1c-1.5,2.1-2.3,3.9-2.3,5.5s.7,2.4,2.2,2.4h.6Z"/>
+      <path class="st0" d="M47.5,12.1h-10.8c.4,1.6,1.7,2.6,3.4,2.6s2.4-.6,3-1.3h4.3c-1.1,2.9-3.9,4.8-7.4,4.8s-7.6-3.2-7.6-7.4,3.3-7.4,7.6-7.4,7.6,3.2,7.6,7.4,0,.9-.1,1.2ZM36.7,9.4h6.5c-.4-1.6-1.7-2.5-3.3-2.5s-2.8,1-3.3,2.5Z"/>
+      <path class="st0" d="M61.3,12.5v4.3c-1.3.9-3.2,1.4-5.1,1.4s-3.8-.6-5.1-1.6l-1.6,1.5h-.8v-4.6l6.4-5.9h-6.3v-3.9h12v3.9l-6.7,6.2c.7.3,1.6.4,2.4.4,1.8,0,3.6-.7,4.8-1.8Z"/>
+      <path class="st0" d="M77.7,12.1h-10.8c.4,1.6,1.7,2.6,3.4,2.6s2.4-.6,3-1.3h4.3c-1.1,2.9-3.9,4.8-7.4,4.8s-7.6-3.2-7.6-7.4,3.3-7.4,7.6-7.4,7.6,3.2,7.6,7.4,0,.9-.1,1.2ZM66.9,9.4h6.5c-.4-1.6-1.7-2.5-3.3-2.5s-2.8,1-3.3,2.5Z"/>
+      <path class="st0" d="M95.1,13.9v3.9h-1.1c-2.9,0-4.3-1.4-4.3-4.2v-3.6c0-1.7-1.1-2.8-2.7-2.8s-2.9,1.1-2.9,2.9v7.7h-4V3.7h4v1.6c1.1-1.2,2.5-1.9,4.3-1.9,3.2,0,5.4,2.1,5.4,5.4v4c0,.7.4,1.1,1.1,1.1h.3Z"/>
+      <path class="st0" d="M101.9,7.4v5.2c0,1,.6,1.6,1.7,1.6h1.4v3.7h-2c-3.4,0-5.1-1.6-5.1-4.6v-5.8h-2.1v-3.7h1.2c.8,0,1.2-.4,1.2-1.2V0h3.8v3.7h3.1v3.7h-3.1Z"/>
+      <path class="st0" d="M122.9,13.9v3.9h-1.1c-2,0-3.3-.7-3.9-2-1.1,1.5-2.7,2.4-4.6,2.4-3.9,0-6.8-3.2-6.8-7.4s2.9-7.4,6.8-7.4,3.2.7,4.3,1.9v-1.6h4v9.1c0,.7.4,1.1,1.1,1.1h.3ZM117.5,10.8c0-2-1.5-3.5-3.5-3.5s-3.4,1.5-3.4,3.5,1.5,3.5,3.4,3.5,3.5-1.5,3.5-3.5Z"/>
+    </svg>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

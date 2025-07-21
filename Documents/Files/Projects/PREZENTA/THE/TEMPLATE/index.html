@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Привітальна сторінка</title>
+  <style>
+    body, html { 
+      margin: 0; 
+      padding: 0; 
+      height: 100%; 
+      overflow: hidden; 
+      touch-action: none; /* Блокує прокручування в батьківському документі */
+      overscroll-behavior: none;
+    }
+    .scene-container { 
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 100%; 
+      transition: opacity 0.5s; 
+      pointer-events: auto;
+    }
+    .scene-container.hidden { 
+      opacity: 0; 
+      pointer-events: none;
+    }
+    iframe { 
+      width: 100%; 
+      height: 100%; 
+      border: none; 
+      display: block;
+    }
+    /* Дозволяємо прокручування для сцени 2 і 3 */
+    #scene2-container iframe,
+    #scene3-container iframe {
+      touch-action: auto; /* Дозволяє прокручування */
+      overscroll-behavior: auto;
+    }
+    #scene1-container iframe {
+      touch-action: none; /* Зберігаємо блокування для сцени 1 */
+      overscroll-behavior: none;
+    }
+  </style>
+  <link rel="prefetch" href="scene1/index.html">
+  <link rel="prefetch" href="scene2/index.html">
+  <link rel="prefetch" href="scene3/index.html">
+</head>
+<body>
+  <div class="scene-container" id="scene1-container">
+    <iframe src="scene1/index.html" allow="pointer-lock; touch-action"></iframe>
+  </div>
+  <div class="scene-container hidden" id="scene2-container">
+    <iframe src="scene2/index.html" allow="pointer-lock; touch-action"></iframe>
+  </div>
+  <div class="scene-container hidden" id="scene3-container">
+    <iframe src="scene3/index.html" allow="pointer-lock; touch-action"></iframe>
+  </div>
+  <script src="scene-manager.js"></script>
+</body>
+</html>

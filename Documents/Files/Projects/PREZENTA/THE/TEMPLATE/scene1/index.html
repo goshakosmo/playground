@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PREZENTA — розпакування подарунку з тінями</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="ribbon-horizontal" viewBox="-100 0 1200 300" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="gradientH" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="var(--dark)" />
+        <stop offset="10%" stop-color="var(--light)" />
+        <stop offset="20%" stop-color="var(--dark)" />
+        <stop offset="50%" stop-color="var(--darkest)" />
+        <stop offset="80%" stop-color="var(--dark)" />
+        <stop offset="90%" stop-color="var(--light)" />
+        <stop offset="100%" stop-color="var(--dark)" />
+      </linearGradient>
+    </defs>
+    <path id="ribbonPathHorizontal" d="M-100,150 C200,151 900,151 1100,150" stroke="url(#gradientH)" stroke-width="80" fill="none" />
+  </svg>
+
+  <svg class="ribbon-vertical" viewBox="0 -100 300 1200" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="gradientV" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="var(--dark)" />
+        <stop offset="10%" stop-color="var(--light)" />
+        <stop offset="20%" stop-color="var(--dark)" />
+        <stop offset="50%" stop-color="var(--darkest)" />
+        <stop offset="80%" stop-color="var(--dark)" />
+        <stop offset="90%" stop-color="var(--light)" />
+        <stop offset="100%" stop-color="var(--dark)" />
+      </linearGradient>
+    </defs>
+    <path id="ribbonPathVertical" d="M150,-100 C151,300 151,800 150,1100" stroke="url(#gradientV)" stroke-width="80" fill="none" />
+  </svg>
+
+  <div class="bow" id="bow">🎀</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

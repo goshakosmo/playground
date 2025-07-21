@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prezenta Hero</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1b0f2f;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      max-width: 800px;
+      margin-bottom: 1.5rem;
+      line-height: 1.3;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      margin: 0 0.2rem;
+      font-weight: 600;
+    }
+
+    .pill-yellow { background: #fff053; color: #2b0c49; }
+    .pill-pink { background: #ff89d0; color: #2b0c49; }
+
+    .subtext {
+      font-size: 1.05rem;
+      max-width: 560px;
+      opacity: 0.85;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .cta {
+      background: #ff4dbc;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 999px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .cta:hover {
+      background: #e73fa8;
+    }
+
+    .emoji-cluster {
+      position: absolute;
+      width: 100%;
+      pointer-events: none;
+    }
+
+    .emoji-cluster span {
+      position: absolute;
+      font-size: 2rem;
+      opacity: 0.6;
+      animation: float 8s infinite ease-in-out;
+    }
+
+    .emoji1 { top: 10%; left: 8%; animation-delay: 0s; }
+    .emoji2 { top: 20%; right: 12%; animation-delay: 1s; }
+    .emoji3 { bottom: 15%; left: 10%; animation-delay: 2s; }
+    .emoji4 { bottom: 8%; right: 15%; animation-delay: 3s; }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(5deg); }
+      100% { transform: translateY(0) rotate(0deg); }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="emoji-cluster">
+      <span class="emoji1">🎈</span>
+      <span class="emoji2">🎁</span>
+      <span class="emoji3">🎉</span>
+      <span class="emoji4">💌</span>
+    </div>
+    <h1>
+      The best way to send an <span class="pill pill-yellow">online greeting</span><br>
+      or <span class="pill pill-pink">gift voucher</span>
+    </h1>
+    <p class="subtext">
+      Choose a fun animated template. Add your digital gift or message. Share the surprise — all in one beautiful experience.
+    </p>
+    <a class="cta" href="#">Start Your Prezenta 🎉</a>
+  </section>
+</body>
+</html>
